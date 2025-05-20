@@ -27,14 +27,14 @@ const icons = [
 
 const SalonMarqueeIcons = () => {
   return (
-    <div className="mt-4 bg-slate-800/20 py-6" data-aos="fade-up">
+    <div className="mt-4 bg-slate-800/20 py-6 px-6" data-aos="fade-up">
       <Marquee gradient={false} speed={50} autoFill pauseOnHover>
         {icons.map((IconComponent, index) => (
           <div
             key={index}
-            className="mx-8 flex items-center justify-center min-w-[100px]"
+            className="mx-6 flex items-center justify-center min-w-[80px] md:min-w-[100px]"
           >
-            <IconComponent size={80} className="text-slate-300" />
+            <IconComponent size={60} md:size={80} className="text-slate-300" />
           </div>
         ))}
       </Marquee>

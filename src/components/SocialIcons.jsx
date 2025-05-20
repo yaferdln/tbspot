@@ -33,7 +33,7 @@ const SocialIcons = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={label}
-          className="transition-colors duration-300 hover:text-teal-700 hover:scale-110"
+          className="transition-colors duration-300 hover:text-sky-700 hover:scale-110"
           style={{ display: "inline-flex" }} // ensure icon scales nicely
         >
           {icon}

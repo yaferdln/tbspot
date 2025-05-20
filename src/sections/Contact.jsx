@@ -2,32 +2,66 @@ import SocialIcons from "../components/SocialIcons";
 
 const Contact = () => {
   return (
-    <section id="contact" className="min-h-screen pt-20">
-      <div className="max-w-6xl mx-auto text-center" data-aos="fade-up">
-        <h2 className="text-3xl font-bold text-teal-500 mb-2">Contact Us</h2>
-        <p className="text-slate-400 mb-10">
-          Walk-ins are welcome, but we’d love to hear from you first! 💇‍♀️💬
+    <section id="contact" className="min-h-screen pt-20 px-4 sm:px-6">
+      <div
+        className="max-w-6xl mx-auto text-center sm:text-left"
+        data-aos="fade-up"
+      >
+        <h2 className="text-3xl sm:text-4xl font-bold text-sky-400 uppercase tracking-wider mb-4">
+          Contact Us
+        </h2>
+        <p className="text-base sm:text-lg italic text-slate-400 leading-relaxed tracking-normal mb-10 max-w-2xl mx-auto">
+          Walk-ins are welcome, but we’d love to hear from you first!
         </p>
 
-        <div className="space-y-6 text-slate-400 text-lg" data-aos="fade-up">
+        <div
+          className="space-y-6 text-slate-400 text-base sm:text-lg leading-relaxed tracking-normal"
+          data-aos="fade-up"
+        >
+          {/* Address */}
           <div>
-            <span className="font-semibold text-teal-400">Address:</span>
+            <span className="font-semibold text-slate-300">Address:</span>
             <br />
-            11th B Banal St. Pag Ibig Sa Nayon Q.C (6th ave) 1403 Quezon City,
-            Philippines
-          </div>
-          <div>
-            <span className="font-semibold text-teal-400">Phone:</span>
-            <br />
-            0963 789 1454
-          </div>
-          <div>
-            <span className="font-semibold text-teal-400">Email:</span>
-            <br />
-            thespotbeauty888@gmail.com
+            <a
+              href="https://www.google.com/maps/place/20b+6th+Ave,+Grace+Park+East,+Manila,+Metro+Manila"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-sky-400 underline underline-offset-4 transition-colors duration-200"
+            >
+              11th B Banal St. Pag Ibig Sa Nayon Q.C (6th Ave) 1403 Quezon City,
+              Philippines
+            </a>
           </div>
 
-          <SocialIcons />
+          {/* Phone */}
+          <div>
+            <span className="font-semibold text-slate-300">Phone:</span>
+            <br />
+            <a
+              href="tel:09637891454"
+              className="hover:text-sky-400 underline underline-offset-4 transition-colors duration-200"
+            >
+              0963 789 1454
+            </a>
+          </div>
+
+          {/* Email */}
+          <div>
+            <span className="font-semibold text-slate-300">Email:</span>
+            <br />
+            <a
+              href="mailto:thespotbeauty888@gmail.com"
+              className="hover:text-sky-400 underline underline-offset-4 transition-colors duration-200"
+            >
+              thespotbeauty888@gmail.com
+            </a>
+          </div>
+
+          {/* Social Media */}
+          <div>
+            <span className="font-semibold text-slate-300">Follow us:</span>
+            <SocialIcons />
+          </div>
         </div>
       </div>
     </section>
