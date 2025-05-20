@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section id="contact" className="min-h-screen pt-20 px-4 sm:px-6">
       <div
-        className="max-w-6xl mx-auto text-center sm:text-left"
+        className="max-w-6xl mx-auto text-center sm:text-center"
         data-aos="fade-up"
       >
         <h2 className="text-3xl sm:text-4xl font-bold text-sky-400 uppercase tracking-wider mb-4">
