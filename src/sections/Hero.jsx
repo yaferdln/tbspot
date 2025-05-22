@@ -1,5 +1,4 @@
-import React from "react";
-import tbspotLogo from "/tbspot_logo.png"; // Adjust path as needed
+import tbspotLogo from "/tbspot_logo.webp"; // Adjust path as needed
 import heroImage from "/images/pexels-enginakyurt-3065209.webp"; // Adjust path as needed
 
 const Hero = () => {
