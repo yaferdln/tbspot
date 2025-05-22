@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Logo / About */}
           <div className="md:flex-1">
             <img
-              src="/tbspot_navlogo.png"
+              src="/tbspot_navlogo.webp"
               alt="The Beauty Spot Logo"
               className="h-10 w-auto mx-auto md:mx-auto"
             />

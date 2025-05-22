@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 bg-slate-900 text-slate-300">
       <div className="flex items-center">
         <img
-          src="/tbspot_navlogo.png"
+          src="/tbspot_navlogo.webp"
           alt="The Beauty Spot Logo"
           className="h-10 w-auto"
         />
