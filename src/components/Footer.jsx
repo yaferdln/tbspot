@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-slate-900 text-slate-400 py-10 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center md:text-left">
         {/* Logo / About */}
-        <div className="hidden md:block space-y-3">
+        <div className="space-y-3">
           <img
             src="/tbspot_navlogo.png"
             alt="The Beauty Spot Logo"
