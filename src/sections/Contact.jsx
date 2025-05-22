@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Globe, Instagram } from "lucide-react";
+import { MapPinned, Phone, Mail, Globe, Instagram } from "lucide-react";
 import SocialIcons from "../components/SocialIcons";
 
 const Contact = () => {
@@ -24,11 +24,15 @@ const Contact = () => {
 
           {/* Address */}
           <div className="flex items-start gap-4">
-            <MapPin className="text-sky-400 w-6 h-6 mt-1" />
+            {/* Added flex-shrink-0 for consistent icon sizing */}
+            <div className="text-sky-400 w-6 h-6 flex-shrink-0">
+              <MapPinned className="w-full h-full" />{" "}
+              {/* Icon fills its container */}
+            </div>
             <div>
               <h4 className="font-semibold text-slate-300">Address</h4>
               <a
-                href="https://www.google.com/maps/place/20b+6th+Ave,+Grace+Park+East,+Manila,+Metro+Manila"
+                href="https://www.google.com/maps/search/11th+B+Banal+St.+Pag+Ibig+Sa+Nayon+Q.C+(6th+Ave),+1403+Quezon+City,+Philippines" // More robust Google Maps link
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-sky-400 underline underline-offset-4 transition-colors duration-200"
@@ -41,7 +45,9 @@ const Contact = () => {
 
           {/* Phone */}
           <div className="flex items-start gap-4">
-            <Phone className="text-sky-400 w-6 h-6 mt-1" />
+            <div className="text-sky-400 w-6 h-6 flex-shrink-0">
+              <Phone className="w-full h-full" />
+            </div>
             <div>
               <h4 className="font-semibold text-slate-300">Phone</h4>
               <a
@@ -55,7 +61,9 @@ const Contact = () => {
 
           {/* Email */}
           <div className="flex items-start gap-4">
-            <Mail className="text-sky-400 w-6 h-6 mt-1" />
+            <div className="text-sky-400 w-6 h-6 flex-shrink-0">
+              <Mail className="w-full h-full" />
+            </div>
             <div>
               <h4 className="font-semibold text-slate-300">Email</h4>
               <a
@@ -69,8 +77,8 @@ const Contact = () => {
 
           {/* Socials */}
           <div className="flex items-start gap-4">
-            <div className="text-sky-400 w-6 h-6 mt-1">
-              <Globe />
+            <div className="text-sky-400 w-6 h-6 flex-shrink-0">
+              <Globe className="w-full h-full" />
             </div>
             <div>
               <h4 className="font-semibold text-slate-300">Follow us</h4>
@@ -81,19 +89,21 @@ const Contact = () => {
 
         {/* RIGHT COLUMN - Image + Book Now Button */}
         <div className="w-full h-auto rounded-xl overflow-hidden shadow-lg bg-slate-800 p-4 flex flex-col items-center justify-between gap-4">
-          <img
-            src="/images/pexels-rdne-7755558.webp"
-            alt="Salon"
-            className="w-full h-72 object-cover rounded-lg opacity-60" /* Added opacity-70 */
-          />
-          <a
-            href="https://forms.gle/your-google-form-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-6 py-3 rounded-full transition duration-300"
-          >
-            Book Now
-          </a>
+          <div className="relative w-full">
+            <img
+              src="/images/pexels-rdne-7755558.webp"
+              alt="Salon"
+              className="w-full h-72 object-cover rounded-lg opacity-60"
+            />
+            <a
+              href="https://forms.gle/your-google-form-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-sky-500 hover:bg-sky-600 text-white font-semibold px-6 py-3 rounded-full transition duration-300 z-10"
+            >
+              Book Now
+            </a>
+          </div>
         </div>
       </div>
     </section>
