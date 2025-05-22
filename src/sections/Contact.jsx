@@ -32,7 +32,7 @@ const Contact = () => {
             <div>
               <h4 className="font-semibold text-slate-300">Address</h4>
               <a
-                href="https://www.google.com/maps/search/11th+B+Banal+St.+Pag+Ibig+Sa+Nayon+Q.C+(6th+Ave),+1403+Quezon+City,+Philippines" // More robust Google Maps link
+                href="https://www.google.com/maps/place/20b+6th+Ave,+Grace+Park+East,+Manila,+Metro+Manila"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-sky-400 underline underline-offset-4 transition-colors duration-200"
