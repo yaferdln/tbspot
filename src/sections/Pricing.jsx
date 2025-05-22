@@ -18,43 +18,55 @@ const Pricing = () => {
         {/* Basic */}
         <div className="bg-slate-800/40 rounded-xl shadow-md p-8 text-center space-y-4">
           <h3 className="text-lg sm:text-xl font-semibold text-slate-300">
-            Glow Basic
+            Basic
           </h3>
-          <p className="text-2xl sm:text-3xl font-bold text-slate-300">₱499</p>
-          <ul className="text-slate-400 space-y-2 text-sm sm:text-base leading-relaxed tracking-normal">
-            <li>Haircut & Style</li>
-            <li>Wash & Blow-dry</li>
-            <li>Basic Manicure</li>
+          <ul className="text-slate-400 space-y-2 text-sm sm:text-base leading-relaxed tracking-normal text-left">
+            <li className="flex justify-between">
+              <span>Haircut</span>
+              <span className="text-sky-400">₱99</span>
+            </li>
+            <li className="flex justify-between">
+              <span>Rebond</span>
+              <span className="text-sky-400">₱999</span>
+            </li>
+            <li className="flex justify-between">
+              <span>Basic Color</span>
+              <span className="text-sky-400">₱888</span>
+            </li>
+            <li className="flex justify-between">
+              <span>Manicure</span>
+              <span className="text-sky-400">₱99</span>
+            </li>
+            <li className="flex justify-between">
+              <span>Pedicure</span>
+              <span className="text-sky-400">₱99</span>
+            </li>
+            <li className="flex justify-between">
+              <span>Footspa</span>
+              <span className="text-sky-400">₱199</span>
+            </li>
           </ul>
         </div>
 
         {/* Premium */}
         <div className="bg-slate-800/40 rounded-xl shadow-lg p-8 text-center space-y-4 transform transition-transform duration-300 ease-in-out hover:scale-105">
           <h3 className="text-lg sm:text-xl font-semibold text-slate-300">
-            Glow Premium
+            Other Services
           </h3>
-          <p className="text-2xl sm:text-3xl font-bold text-slate-300">₱999</p>
           <ul className="text-slate-400 space-y-2 text-sm sm:text-base leading-relaxed tracking-normal">
-            <li>Haircut + Treatment</li>
-            <li>Full Body Massage</li>
-            <li>Gel Mani + Pedi</li>
-            <li>Face Glow Mask</li>
+            <li>Gel Polish</li>
+            <li>Eyelash</li>
+            <li>Facial</li>
           </ul>
         </div>
 
         {/* Luxe */}
         <div className="bg-slate-800/40 rounded-xl shadow-md p-8 text-center space-y-4">
           <h3 className="text-lg sm:text-xl font-semibold text-slate-300">
-            Glow Luxe
+            Available Promos
           </h3>
-          <p className="text-2xl sm:text-3xl font-bold text-slate-300">
-            ₱1,499
-          </p>
           <ul className="text-slate-400 space-y-2 text-sm sm:text-base leading-relaxed tracking-normal">
-            <li>All-In Hair Makeover</li>
-            <li>Spa Facial & Massage</li>
-            <li>Nail Art + Foot Spa</li>
-            <li>🕯 Aromatherapy Included</li>
+            <li>Coming Soon...</li>
           </ul>
         </div>
       </div>

@@ -4,7 +4,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 bg-slate-900/80 text-slate-300">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 bg-slate-900 text-slate-300">
       <div className="flex items-center">
         <img
           src="/tbspot_navlogo.png"

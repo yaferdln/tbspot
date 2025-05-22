@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import Hero from "./components/ImageSlider";
+import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Pricing from "./sections/Pricing";
 import Contact from "./sections/Contact";
