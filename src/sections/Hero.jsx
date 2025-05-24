@@ -42,7 +42,7 @@ const Hero = () => {
 
         {/* Right: Typewriter + Button */}
         <div className="flex flex-col items-center justify-center p-4 sm:p-6 space-y-6">
-          <p className="text-xl sm:text-3xl md:text-5xl font-extrabold tracking-wide text-amber-600 text-center">
+          <p className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-wide text-amber-600 text-center">
             <Typewriter words={words} />
           </p>
 
