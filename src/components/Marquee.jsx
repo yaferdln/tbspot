@@ -23,25 +23,26 @@ const services = [
 
 const SalonMarqueeIcons = () => {
   return (
-    <div className="relative w-full overflow-x-hidden">
-      <div
-        className="mt-4 bg-slate-900/40 py-6 px-4 md:px-6 w-full"
-        data-aos="zoom-in"
+    <div className="w-full overflow-hidden mt-8">
+      <Marquee
+        gradient={false}
+        speed={50}
+        pauseOnHover
+        autoFill
+        className="!overflow-visible"
       >
-        <Marquee gradient={false} speed={50} pauseOnHover>
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="mx-4 flex-shrink-0 flex flex-col items-center justify-center w-[80px] text-center"
-            >
-              <service.icon size={36} className="text-slate-400 mb-2" />
-              <p className="text-xs md:text-sm text-slate-200 whitespace-nowrap">
-                {service.label}
-              </p>
-            </div>
-          ))}
-        </Marquee>
-      </div>
+        {services.map(({ icon: Icon, label }, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center text-center min-w-[80px] mx-3"
+          >
+            <Icon size={36} className="text-slate-400 mb-1" />
+            <p className="text-xs md:text-sm text-slate-200 whitespace-nowrap">
+              {label}
+            </p>
+          </div>
+        ))}
+      </Marquee>
     </div>
   );
 };

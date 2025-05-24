@@ -1,8 +1,11 @@
-import Marquee from "../components/Marquee";
+import Marquee from "../components/Marquee"; // assuming correct path
 
 const About = () => {
   return (
-    <section id="about" className="min-h-screen pt-20 px-4 sm:px-6">
+    <section
+      id="about"
+      className="min-h-screen pt-20 px-4 sm:px-6 overflow-x-hidden"
+    >
       <div className="max-w-6xl mx-auto space-y-10">
         {/* Heading */}
         <div className="text-center space-y-3" data-aos="fade-up">
@@ -14,18 +17,16 @@ const About = () => {
           </p>
         </div>
 
-        {/* Intro Paragraphs */}
+        {/* Intro */}
         <div
           className="space-y-4 text-slate-400 text-justify leading-loose"
           data-aos="fade-up"
         >
           <p className="text-sm md:text-base">
             Welcome to{" "}
-            <strong className="text-sm md:text-base text-slate-300">
-              The Beauty Spot
-            </strong>{" "}
-            — not just a salon, but your destination for glowing makeovers,
-            renewed confidence, and real transformations.
+            <strong className="text-slate-300">The Beauty Spot</strong> — not
+            just a salon, but your destination for glowing makeovers, renewed
+            confidence, and real transformations.
           </p>
           <p className="text-sm md:text-base">
             Here, every snip, style, and shade is tailored not just to your look
@@ -63,31 +64,28 @@ const About = () => {
           </ul>
         </div>
 
-        {/* Outro Paragraph */}
+        {/* Outro */}
         <div
-          className="space-y-4 text-sm md:text-base text-samber-600 text-justify leading-loose"
+          className="space-y-4 text-sm md:text-base text-slate-400 text-justify leading-loose"
           data-aos="fade-up"
         >
-          <p className="text-sm md:text-base">
-            At{" "}
-            <strong className="text-sm md:text-base text-slate-300">
-              The Beauty Spot
-            </strong>
-            , we don’t just create hairstyles — we create confidence. Because
-            when you love your look, everything else falls into place.
+          <p>
+            At <strong className="text-slate-300">The Beauty Spot</strong>, we
+            don’t just create hairstyles — we create confidence. Because when
+            you love your look, everything else falls into place.
           </p>
 
           <h3 className="text-lg sm:text-xl font-semibold text-amber-600 mt-6">
             Let's Glow Together
           </h3>
-          <p className="text-sm md:text-base">
+          <p>
             Whether you're in for a quick touch-up or a full transformation,
             we’re here to bring out the best version of you. Come in with a
             vision — or let us help you find it.
           </p>
         </div>
 
-        {/* Marquee / Icons */}
+        {/* Marquee */}
         <Marquee />
       </div>
     </section>
