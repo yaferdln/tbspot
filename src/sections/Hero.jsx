@@ -4,25 +4,20 @@ import heroImage from "/images/pexels-enginakyurt-3065209.webp";
 
 const Hero = () => {
   const words = [
-    "Haircut",
-    "Hair Color",
-    "Hair Rebond",
-    "Hair Treatment",
-    "Blow Dry",
-    "Highlights",
+    "Nail Art",
     "Gel Polish",
-    "Manicure",
-    "Pedicure",
-    "Foot Spa",
+    "Rebonding",
+    "Balayage",
+    "Treated Hair",
+    "Mani / Pedi",
+    "FootSpa",
+    "Eyelash Ext.",
+    "Nail Ext.",
     "Facial",
-    "Massage",
-    "Eyebrow Threading",
-    "Lash Lift",
-    "Lash Extensions",
-    "Makeup Services",
-    "Underarm Wax",
-    "Leg Wax",
-    "Diamond Peel",
+    "Eyebag Minimizer",
+    "RF Face",
+    "Warts Removal",
+    "BBGlow / BB Blush",
   ];
 
   return (
