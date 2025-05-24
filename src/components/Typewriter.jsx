@@ -9,7 +9,7 @@ const Typewriter = memo(({ words }) => (
     cursorStyle="|"
     typeSpeed={50}
     deleteSpeed={40}
-    delaySpeed={1000}
+    delaySpeed={1500}
   />
 ));
 
