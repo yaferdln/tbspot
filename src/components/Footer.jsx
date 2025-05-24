@@ -2,7 +2,7 @@ import SocialIcons from "./SocialIcons";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-slate-400 py-10 px-4 sm:px-6">
+    <footer className="text-slate-400 py-10 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto w-full">
         <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-10 text-center md:text-center">
           {/* Logo / About */}
@@ -19,14 +19,14 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="md:flex-1">
-            <h3 className="text-lg font-semibold mb-3 text-sky-400 uppercase tracking-wide">
+            <h3 className="text-sm md:text-lg font-semibold mb-3 text-amber-600 uppercase tracking-wide">
               Quick Links
             </h3>
             <ul className="space-y-2 text-sm sm:text-base leading-relaxed tracking-normal">
               <li>
                 <a
                   href="#contact"
-                  className="hover:text-sky-400 transition-colors duration-200"
+                  className="hover:text-amber-600 transition-colors duration-200"
                 >
                   Contact
                 </a>
@@ -34,7 +34,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#about"
-                  className="hover:text-sky-400 transition-colors duration-200"
+                  className="hover:text-amber-600 transition-colors duration-200"
                 >
                   About Us
                 </a>
@@ -42,7 +42,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#pricing"
-                  className="hover:text-sky-400 transition-colors duration-200"
+                  className="hover:text-amber-600 transition-colors duration-200"
                 >
                   Pricing
                 </a>
@@ -52,7 +52,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="md:flex-1">
-            <h3 className="text-lg font-semibold mb-3 text-sky-400 uppercase tracking-wide">
+            <h3 className="text-sm md:text-lg font-semibold mb-3 text-amber-600 uppercase tracking-wide">
               Get in Touch
             </h3>
             <ul className="space-y-2 text-sm sm:text-base leading-relaxed tracking-normal">
@@ -61,7 +61,7 @@ const Footer = () => {
                   href="https://www.google.com/maps/place/20b+6th+Ave,+Grace+Park+East,+Manila,+Metro+Manila"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-sky-400 underline underline-offset-4 transition-colors duration-200"
+                  className="hover:text-amber-600 text-sm md:-text-base hover:underline hover:underline-offset-4 transition-colors duration-200"
                 >
                   11th B Banal St. Pag Ibig Sa Nayon Q.C (6th Ave) 1403 Quezon
                   City, Philippines
@@ -70,7 +70,7 @@ const Footer = () => {
               <li>
                 <a
                   href="tel:09637891454"
-                  className="hover:text-sky-400 underline underline-offset-4 transition-colors duration-200"
+                  className="hover:text-amber-600 hover:underline hover:underline-offset-4 transition-colors duration-200"
                 >
                   0963 789 1454
                 </a>
@@ -78,7 +78,7 @@ const Footer = () => {
               <li>
                 <a
                   href="mailto:thespotbeauty888@gmail.com"
-                  className="hover:text-sky-400 underline underline-offset-4 transition-colors duration-200"
+                  className="hover:text-amber-600 hover:underline hover:underline-offset-4 transition-colors duration-200"
                 >
                   thespotbeauty888@gmail.com
                 </a>

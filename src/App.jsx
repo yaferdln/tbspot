@@ -20,7 +20,7 @@ const App = () => {
   }, []);
   return (
     <>
-      <div className="bg-slate-900 text-slate-400 overflow-hidden scroll-smooth">
+      <div className="bg-slate-900 text-slate-400 overflow-hidden scroll-smooth leading-relaxed">
         <Navbar />
 
         <Hero />

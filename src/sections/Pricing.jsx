@@ -2,10 +2,10 @@ const Pricing = () => {
   return (
     <section id="pricing" className="min-h-screen pt-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto mb-12 text-center" data-aos="fade-up">
-        <h2 className="text-3xl sm:text-4xl font-bold text-sky-400 uppercase tracking-wider mb-3">
+        <h2 className="text-xl sm:text-3xl font-bold text-amber-600 uppercase tracking-wider mb-3">
           Our Pricing
         </h2>
-        <p className="text-base sm:text-lg leading-relaxed tracking-normal text-slate-400 max-w-2xl mx-auto italic">
+        <p className="text-sm sm:text-lg leading-relaxed tracking-normal text-slate-400 max-w-2xl mx-auto italic">
           From quick touch-ups to full glam makeovers — we’ve got a beauty
           package for every vibe.
         </p>
@@ -23,27 +23,27 @@ const Pricing = () => {
           <ul className="text-slate-400 space-y-2 text-sm sm:text-base leading-relaxed tracking-normal text-left">
             <li className="flex justify-between">
               <span>Haircut</span>
-              <span className="text-sky-400">₱99</span>
+              <span className="text-amber-600">₱99</span>
             </li>
             <li className="flex justify-between">
               <span>Rebond</span>
-              <span className="text-sky-400">₱999</span>
+              <span className="text-amber-600">₱999</span>
             </li>
             <li className="flex justify-between">
               <span>Basic Color</span>
-              <span className="text-sky-400">₱888</span>
+              <span className="text-amber-600">₱888</span>
             </li>
             <li className="flex justify-between">
               <span>Manicure</span>
-              <span className="text-sky-400">₱99</span>
+              <span className="text-amber-600">₱99</span>
             </li>
             <li className="flex justify-between">
               <span>Pedicure</span>
-              <span className="text-sky-400">₱99</span>
+              <span className="text-amber-600">₱99</span>
             </li>
             <li className="flex justify-between">
               <span>Footspa</span>
-              <span className="text-sky-400">₱199</span>
+              <span className="text-amber-600">₱199</span>
             </li>
           </ul>
         </div>

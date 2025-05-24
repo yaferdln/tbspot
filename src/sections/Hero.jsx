@@ -1,53 +1,64 @@
-import tbspotLogo from "/tbspot_logo.webp"; // Adjust path as needed
-import heroImage from "/images/pexels-enginakyurt-3065209.webp"; // Adjust path as needed
+import { Typewriter } from "react-simple-typewriter";
+import tbspotLogo from "/tbspot_logo.webp";
+import heroImage from "/images/pexels-enginakyurt-3065209.webp";
 
-const Hero = () => {
-  return (
-    <section style={heroSectionStyle}>
-      {/* Background image with reduced opacity */}
-      <img src={heroImage} alt="Spa background" style={heroImageStyle} />
+const Hero = () => (
+  <section className="relative w-full h-screen flex items-center justify-center pt-20 overflow-hidden">
+    {/* Background image */}
+    <img
+      src={heroImage}
+      alt="Spa background"
+      className="absolute inset-0 w-full h-full object-cover opacity-20 z-0"
+    />
 
-      {/* Overlayed Logo (transparent background makes this work well) */}
-      <img
-        src={tbspotLogo}
-        alt="The Beauty Spot Logo"
-        style={overlayLogoStyle}
-      />
-    </section>
-  );
-};
+    {/* Content Wrapper */}
+    <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 w-11/12 max-w-6xl bg-white/5 rounded-lg shadow-lg overflow-hidden backdrop-blur-sm">
+      {/* Left: Logo with background */}
+      <div className="bg-slate-900 flex items-center justify-center p-6">
+        <img
+          src={tbspotLogo}
+          alt="The Beauty Spot Logo"
+          className="w-4/5 max-w-sm"
+        />
+      </div>
 
-// Inline Styles
-const heroSectionStyle = {
-  position: "relative",
-  width: "100%",
-  height: "100vh", // Full viewport height
-  paddingTop: "80px", // Original pt-20, if still desired for overall layout offset
-  display: "flex", // Use flexbox for centering
-  alignItems: "center", // Center vertically
-  justifyContent: "center", // Center horizontally
-  overflow: "hidden", // Hide overflow if image is larger
-};
-
-const heroImageStyle = {
-  position: "absolute", // Position absolutely to cover the section
-  top: 0,
-  left: 0,
-  width: "100%",
-  height: "100%",
-  objectFit: "cover", // Cover the entire area
-  opacity: 0.3, // Reduced opacity (e.g., 30%). Adjust this value!
-  zIndex: 0, // Ensure it's behind the logo
-};
-
-const overlayLogoStyle = {
-  position: "relative", // Position relative to be on top of the absolute background
-  zIndex: 1, // Ensure it's on top
-  width: "80%", // Make the logo large, 80% of its parent's width
-  maxWidth: "600px", // Optional: Set a max-width so it doesn't get too huge on very wide screens
-  height: "auto", // Maintain aspect ratio
-  display: "block", // Ensures proper sizing and centering
-  // The flexbox on the parent `heroSectionStyle` will handle the centering
-};
+      {/* Right: Typewriter */}
+      <div className="flex items-center justify-center p-6">
+        <p className="text-xl md:text-2xl font-semibold text-amber-500 text-center">
+          <Typewriter
+            words={[
+              "Haircut",
+              "Hair Color",
+              "Hair Rebond",
+              "Hair Treatment",
+              "Blow Dry",
+              "Highlights",
+              "Gel Polish",
+              "Manicure",
+              "Pedicure",
+              "Foot Spa",
+              "Facial",
+              "Massage",
+              "Eyebrow Threading",
+              "Lash Lift",
+              "Lash Extensions",
+              "Makeup Services",
+              "Underarm Wax",
+              "Leg Wax",
+              "Diamond Peel",
+              "Book Your Appointment Today",
+            ]}
+            loop
+            cursor
+            cursorStyle="|"
+            typeSpeed={40}
+            deleteSpeed={40}
+            delaySpeed={1000}
+          />
+        </p>
+      </div>
+    </div>
+  </section>
+);
 
 export default Hero;

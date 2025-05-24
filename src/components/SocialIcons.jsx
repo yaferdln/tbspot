@@ -25,7 +25,7 @@ const SocialIcons = () => {
   ];
 
   return (
-    <div className="flex justify-center gap-6 pt-4 text-slate-300 text-2xl">
+    <div className="flex justify-start gap-6 pt-4 text-slate-300 text-2xl">
       {socials.map(({ href, label, icon }) => (
         <a
           key={label}
@@ -33,7 +33,7 @@ const SocialIcons = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={label}
-          className="transition-colors duration-300 hover:text-sky-400 hover:scale-110"
+          className="transition-colors duration-300 hover:text-amber-600 hover:scale-110"
           style={{ display: "inline-flex" }} // ensure icon scales nicely
         >
           {icon}
