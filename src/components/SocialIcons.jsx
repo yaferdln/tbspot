@@ -18,7 +18,7 @@ const SocialIcons = () => {
       icon: <FaInstagram size={24} />,
     },
     {
-      href: "https://tiktok.com/@yafercrypto",
+      href: "https://tiktok.com/@yaferdeleon",
       label: "TikTok",
       icon: <FaTiktok size={24} />,
     },
