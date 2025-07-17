@@ -4,9 +4,9 @@ import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Pricing from "./sections/Pricing";
 import Contact from "./sections/Contact";
+import Booking from "./sections/BookNowModal";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -27,6 +27,7 @@ const App = () => {
         <About />
         <Pricing />
         <Contact />
+        <Booking />
         <Footer />
       </div>
     </>
