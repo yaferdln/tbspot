@@ -49,14 +49,14 @@ const BookNowModal = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4 py-6">
-      <div className="bg-slate-800 text-white w-full max-w-lg sm:max-w-2xl max-h-screen overflow-y-auto p-6 sm:p-8 rounded-lg shadow-xl relative">
+      <div className="bg-slate-800 text-white w-full max-w-lg sm:max-w-2xl max-h-screen overflow-y-auto p-6 sm:p-8 rounded-lg shadow-xl relative pt-12">
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-5 text-white text-3xl hover:text-amber-500 focus:outline-none"
+          className="absolute top-4 right-4 text-white text-2xl hover:text-amber-500 focus:outline-none"
           aria-label="Close booking form"
         >
-          &times;
+          ×
         </button>
 
         {/* Title */}
@@ -121,18 +121,36 @@ const BookNowModal = ({ isOpen, onClose }) => {
 
           {/* Date & Time */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <input
-              type="date"
-              name="preferred_date"
-              required
-              className="w-full px-4 py-3 rounded bg-white/10 focus:outline-none focus:ring-2 focus:ring-amber-500"
-            />
-            <input
-              type="time"
-              name="preferred_time"
-              required
-              className="w-full px-4 py-3 rounded bg-white/10 focus:outline-none focus:ring-2 focus:ring-amber-500"
-            />
+            <div className="w-full">
+              <label
+                htmlFor="preferred_date"
+                className="block mb-1 text-sm text-white"
+              >
+                Preferred Date
+              </label>
+              <input
+                type="date"
+                name="preferred_date"
+                id="preferred_date"
+                required
+                className="w-full px-4 py-3 rounded bg-white/10 focus:outline-none focus:ring-2 focus:ring-amber-500"
+              />
+            </div>
+            <div className="w-full">
+              <label
+                htmlFor="preferred_time"
+                className="block mb-1 text-sm text-white"
+              >
+                Preferred Time
+              </label>
+              <input
+                type="time"
+                name="preferred_time"
+                id="preferred_time"
+                required
+                className="w-full px-4 py-3 rounded bg-white/10 focus:outline-none focus:ring-2 focus:ring-amber-500"
+              />
+            </div>
           </div>
 
           {/* Notes */}
