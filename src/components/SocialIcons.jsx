@@ -17,11 +17,11 @@ const SocialIcons = () => {
       label: "Instagram",
       icon: <FaInstagram size={24} />,
     },
-    {
-      href: "https://tiktok.com/@yaferdeleon",
-      label: "TikTok",
-      icon: <FaTiktok size={24} />,
-    },
+    // {
+    //   href: "https://tiktok.com/@yaferdeleon",
+    //   label: "TikTok",
+    //   icon: <FaTiktok size={24} />,
+    // },
   ];
 
   return (
