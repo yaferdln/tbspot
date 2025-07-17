@@ -48,8 +48,8 @@ const BookNowModal = ({ isOpen, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 px-4 py-6 overflow-y-auto">
-      <div className="bg-slate-800 text-white w-full max-w-2xl p-6 sm:p-8 rounded-lg shadow-xl relative">
+    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4 py-6">
+      <div className="bg-slate-800 text-white w-full max-w-lg sm:max-w-2xl max-h-screen overflow-y-auto p-6 sm:p-8 rounded-lg shadow-xl relative">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -64,7 +64,7 @@ const BookNowModal = ({ isOpen, onClose }) => {
           Book an Appointment
         </h2>
 
-        {/* Booking Form */}
+        {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-5">
           <input
             type="text"
@@ -73,7 +73,6 @@ const BookNowModal = ({ isOpen, onClose }) => {
             placeholder="Full Name"
             className="w-full px-4 py-3 rounded bg-white/10 placeholder-white/80 focus:outline-none focus:ring-2 focus:ring-amber-500"
           />
-
           <input
             type="tel"
             name="phone"
@@ -81,7 +80,6 @@ const BookNowModal = ({ isOpen, onClose }) => {
             placeholder="Contact Number"
             className="w-full px-4 py-3 rounded bg-white/10 placeholder-white/80 focus:outline-none focus:ring-2 focus:ring-amber-500"
           />
-
           <input
             type="email"
             name="email"
@@ -145,7 +143,7 @@ const BookNowModal = ({ isOpen, onClose }) => {
             className="w-full px-4 py-3 rounded bg-white/10 placeholder-white/80 focus:outline-none focus:ring-2 focus:ring-amber-500"
           ></textarea>
 
-          {/* Submit Button */}
+          {/* Submit */}
           <button
             type="submit"
             disabled={isSubmitting}
